@@ -18,7 +18,7 @@ const AboutMe = () => {
             <div className="md:flex">
               <div className="md:w-1/3 bg-secondary/30 p-8 flex flex-col items-center justify-center border-r border-border/40">
                 <Avatar className="w-32 h-32 mb-4 border-2 border-primary">
-                  <AvatarImage src="/placeholder.svg" alt="Levea Deroshen S" />
+                  <AvatarImage src="/Photo.jpg" alt="Levea Deroshen S" />
                   <AvatarFallback>LDS</AvatarFallback>
                 </Avatar>
                 <h2 className="text-2xl font-bold text-center">Levea Deroshen S</h2>
