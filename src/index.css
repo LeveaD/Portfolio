@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 252 14% 10%; /* Deep Purple/Black */
+    --foreground: 252 10% 80%; /* Light off-white */
+
+    --card: 252 14% 13%;
+    --card-foreground: 252 10% 80%;
+ 
+    --popover: 252 14% 10%;
+    --popover-foreground: 252 10% 80%;
+ 
+    --primary: 180 100% 50%; /* Vibrant Cyan */
+    --primary-foreground: 252 14% 10%;
+ 
+    --secondary: 252 10% 25%; /* Muted Purple */
+    --secondary-foreground: 0 0% 98%;
+ 
+    --muted: 252 10% 20%;
+    --muted-foreground: 252 5% 65%;
+ 
+    --accent: 252 10% 30%; /* Brighter Purple */
+    --accent-foreground: 0 0% 98%;
+ 
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 252 14% 20%;
+    --input: 252 14% 20%;
+    --ring: 180 100% 50%;
+
+    --radius: 0.75rem;
+
+    --font-sans: 'Poppins', sans-serif;
+    --font-heading: 'Poppins', sans-serif;
+  }
+
+  .light {
+    --background: 0 0% 98%; /* Off-white */
+    --foreground: 252 14% 10%; /* Deep Purple/Black */
+
+    --card: 0 0% 100%;
+    --card-foreground: 252 14% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 252 14% 10%;
+
+    --primary: 180 100% 40%; /* Vibrant Cyan */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 252 20% 94%; /* Light Lavender */
+    --secondary-foreground: 252 10% 20%;
+
+    --muted: 252 20% 96%;
+    --muted-foreground: 252 5% 46%;
+
+    --accent: 252 20% 92%; /* Brighter Lavender */
+    --accent-foreground: 252 10% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 252 10% 88%;
+    --input: 252 10% 88%;
+    --ring: 180 100% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
